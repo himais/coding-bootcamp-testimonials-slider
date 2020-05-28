@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
+/* 
+  Table of contents:
+    1. Variables
+    2. General
+    3. Slider
+    4. Card
+    5. Buttons
+    6. Credits
+    7. Desktop version
+*/
+
+/* 1. Variables */
 :root {
-  --color-background: #fff;
   --color-dark-blue: hsl(240, 38%, 20%);
   --color-light-blue: hsl(228, 45%, 44%);
   --color-grayish-blue: hsl(240, 18%, 77%);
   --color-grayish-blue-light: hsla(240, 18%, 77%, 0.9);
+
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
 }
 
+/* == 2. General == */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
 };
 
 body {
@@ -34,13 +50,13 @@ main {
   flex-direction: column;
 }
 
+/* == 3. Slider ==  */
 .slider {
   width: 85vw;
   margin-top: 5vh;
 }
 
-.card {}
-
+/* == 4. Card ==  */
 .card__content {
   background: url(images/pattern-quotes.svg) no-repeat;
   background-position: 50% 10%;
@@ -51,7 +67,7 @@ main {
 .card__testimonial {
   color: var(--color-dark-blue);
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: var(--font-weight-light);
   line-height: 1.7rem;
   text-align: center;
 }
@@ -85,15 +101,16 @@ main {
 
 .card__author {
   color: var(--color-dark-blue);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 .card__role{
   color: var(--color-grayish-blue);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
   margin-left: 0.5rem;
 }
 
+/* == 5. Buttons ==  */
 .slider__buttons {
   width: 75px;
   height: 35px;
@@ -126,6 +143,7 @@ main {
   border-radius: 0 50% 50% 0;
 }
 
+/* == 6. Credits == */
 .attribution {
   font-size: 0.7rem;
   text-align: center;
@@ -139,7 +157,9 @@ main {
   color: var(--color-light-blue);
 }
 
+/* == 7. Desktop version */
 @media only screen and (min-width: 768px) {
+  /* == General == */
   body {
     font-size: 16px;
   }
@@ -149,6 +169,7 @@ main {
     background-size: 50%;
   }
 
+  /* == Slider == */
   .slider {
     height: 80vh;
     margin-top: 3rem;
@@ -156,6 +177,7 @@ main {
     align-items: center;
   }
 
+  /* == Card == */
   .card {
     display: flex;
     justify-content: center;
@@ -198,6 +220,7 @@ main {
     font-size: 1.3rem;
   }
 
+  /* == Buttons == */
   .slider__buttons {
     width: 110px;
     height: 55px;
@@ -205,6 +228,7 @@ main {
     left: 20%;
   }
 
+  /* == Credits == */
   .attribution {
     position: fixed;
   }
