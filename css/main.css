@@ -30,7 +30,7 @@ img {
 main {
   width: 100%;
   min-height: 100vh;
-  background: url('images/pattern-curve.svg') left bottom no-repeat;
+  background: url('../images/pattern-curve.svg') left bottom no-repeat;
   background-size: 80%;
   display: flex;
   align-items: center;
@@ -38,28 +38,36 @@ main {
 }
 
 .slider {
-  width: 85vw;
-  margin-top: 5vh;
+  width: 87vw;
+  margin-top: 1.5rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .card__content {
-  background: url(images/pattern-quotes.svg) no-repeat;
-  background-position: 50% 10%;
-  background-size: 20%;
-  padding-top: 3rem;
+  background: url(../images/pattern-quotes.svg) no-repeat;
+  background-position: 51% 13%;
+  background-size: 19%;
+  padding-top: 3.3rem;
+  width: 95%;
 }
 
 .card__testimonial {
   color: var(--color-dark-blue);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: var(--font-weight-light);
-  line-height: 1.7rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
 .card__picture-container {
-  padding: 1.5rem 0;
-  background: url('images/pattern-bg.svg') no-repeat;
+  padding: 1.9rem 0;
+  background: url('../images/pattern-bg.svg') no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -69,15 +77,16 @@ main {
 }
 
 .card__picture {
-  width: 80%;
+  width: 77%;
   border-radius: 5px;
   box-shadow: -45px 85px 39px -68px var(--color-grayish-blue),
-  62px -43px 18px -78px var(--color-grayish-blue);
+  50px -43px 50px -73px var(--color-grayish-blue),
+  -20px 0 30px -35px var(--color-grayish-blue);
 }
 
 .card__footer {
-  margin-top: 1.5rem;
-  font-size: 1rem;
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,14 +99,14 @@ main {
 }
 
 .card__role{
+  margin-top: 0.2rem;
   color: var(--color-grayish-blue);
   font-weight: var(--font-weight-medium);
-  margin-left: 0.5rem;
 }
 
 .slider__buttons {
-  width: 75px;
-  height: 35px;
+  width: 80px;
+  height: 40px;
   position: absolute;
   bottom: 3%;
   display: flex;
@@ -116,7 +125,7 @@ main {
 }
 
 .button__icon {
-  width: 10px;
+  width: 9px;
 }
 
 .button--prev {
@@ -143,12 +152,13 @@ main {
 @media only screen and (min-width: 768px) {
   main {
     flex-direction: column;
-    background-size: 50%;
+    background-size: 42%;
   }
 
   .slider {
-    height: 80vh;
-    margin-top: 3rem;
+    width: 90vw;
+    height: 95vh;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
   }
@@ -161,12 +171,12 @@ main {
   }
 
   .card__picture-container {
-    width: 50%;
-    padding: 4rem 0;
+    width: 58%;
+    padding: 4.4rem 0 7rem;
   }
   
   .card__picture {
-    width: 77%;
+    width: 77.5%;
     margin-top: -0.5rem;
     margin-right: 2rem;
     box-shadow:
@@ -176,30 +186,41 @@ main {
   }
 
   .card__content {
-    width: 52%;
+    width: 54%;
     right: -6rem;
     position: relative;
     background-position: 19% -1%;
     padding-top: 4rem;
+    top: -1.5rem;
   }
 
   .card__testimonial {
     font-size: 2rem;
-    line-height: 2.9rem;
+    line-height: 2.8rem;
     text-align: left;
   }
 
   .card__footer {
+    margin-top: 2.3rem;
     flex-direction: row;
     justify-content: flex-start;
     font-size: 1.3rem;
   }
 
+  .card__role{
+    margin-left: 0.5rem;
+    margin-top: 0;
+  }
+
   .slider__buttons {
     width: 110px;
     height: 55px;
-    bottom: 6%;
-    left: 20%;
+    bottom: 12%;
+    left: 17%;
+  }
+
+  .button__icon {
+    width: 12px;
   }
 
   .attribution {
