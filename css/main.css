@@ -104,6 +104,10 @@ main {
   font-weight: var(--font-weight-medium);
 }
 
+.card--hidden {
+  display: none !important;
+}
+
 .slider__buttons {
   width: 80px;
   height: 40px;
