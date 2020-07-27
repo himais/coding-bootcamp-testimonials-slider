@@ -227,8 +227,4 @@ main {
   .button__icon {
     width: 12px;
   }
-  
-  .attribution {
-    position: fixed;
-  }
 }
