@@ -39,7 +39,9 @@ main {
 
 .slider {
   width: 87vw;
+  height: 100vh;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .card {
@@ -161,7 +163,6 @@ main {
 
   .slider {
     width: 90vw;
-    height: 100vh;
     margin-top: 2rem;
     display: flex;
     align-items: center;
@@ -226,7 +227,7 @@ main {
   .button__icon {
     width: 12px;
   }
-
+  
   .attribution {
     position: fixed;
   }
