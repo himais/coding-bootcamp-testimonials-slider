@@ -161,7 +161,7 @@ main {
 
   .slider {
     width: 90vw;
-    height: 95vh;
+    height: 100vh;
     margin-top: 2rem;
     display: flex;
     align-items: center;
